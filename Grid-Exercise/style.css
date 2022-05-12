@@ -1,0 +1,20 @@
+.container{
+    display: grid
+    table-column: 3fr 1fr 12fr
+    table-row: 3fr 1fr 3fr
+    width: 600px
+    length: 200px
+    template-areas: "area1 area1 area2 area3 area3 area3 area3"
+        "area1 area1 area2 area3 area3 area3 area3"
+        "area4 area4 area4 area4 area4 area4 area4"
+        "area5 area5 area6 area7 area7 area7 area7"
+        "area5 area5 area6 area7 area7 area7 area7"
+}
+
+.area1 .area3 .area5 .area7{
+    color:darkred
+}
+
+.area2 .area4{
+    color:white
+}
