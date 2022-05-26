@@ -1,0 +1,39 @@
+.container{
+    display:grid;
+    width: 100vw;
+    grid-template-columns:15vw 50vw 20vw 15vw;
+    grid-template-rows: 5vh auto auto auto auto auto auto auto auto auto 5vh;
+    column-gap: 1vw;
+    row-gap: 1vh;
+    grid-template-areas: 
+        ". . . ."
+        ". header header ."
+        ". main image-profile ."
+        ". main main ."
+        ". main main ."
+        ". main main ."
+        ". main main ."
+        ". main main ."
+        ". main main ."
+        ". . . .";
+    /* justify-items:start;
+    align-items: center; */
+}
+
+.name{
+    grid-area: header;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-items: center;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
